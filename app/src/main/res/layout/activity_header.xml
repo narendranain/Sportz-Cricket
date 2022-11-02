@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ToolbarTheme"
+    android:paddingBottom="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:contentInsetStart="0dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/logo"
+        app:layout_constraintTop_toTopOf="@+id/home_toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/home_toolbar"
+
+        android:layout_marginLeft="@dimen/_20sdp">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        android:id="@+id/ic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toTopOf="@id/logo"
+        app:layout_constraintBottom_toBottomOf="@id/logo"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="left"
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:text="Sportz Interactive"
+        />
+    <TextView
+        android:id="@+id/ic_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/ic_title"
+        app:layout_constraintStart_toStartOf="@id/ic_title"
+        android:text=""
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="@color/text_sub_text"
+        android:layout_marginTop="@dimen/_2sdp"
+        >
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
